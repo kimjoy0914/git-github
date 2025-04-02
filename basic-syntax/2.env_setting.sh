@@ -26,6 +26,7 @@ git config --list
 git clone 타인 레포주소
 # 해당 폴더로 이동 후 github 레포 주소 변경    
 git remote set-url origin 나의레포주소
+# 아래 명령 처리시 상대 브랜치 이름이 master이면 main대신 master로 변경함.
 git push origin main
 # 질문: 왜 1번에서는 add 그리고 commit하지 않고 push를 했나?
 # 푸쉬를 한다는 건 내 로컬 컴터에 저장되어 있는 커밋이력을 푸쉬하겠다는 것이다.    
@@ -43,3 +44,18 @@ git remote add origin 나의레포주소
 git add .
 git commit -m "first"
 git push origin main
+
+# 사용자 지정 방법
+# 전역적 사용자(이름, email)  지정
+git config --global user.name "유저네임"
+git config --global user.email "유저이메일"
+
+# 지역적 사용자 지정
+git config --local user.name "유저네임"
+git config --local user.email "유저이메일"
+
+# 사용자 정보 조회
+git config user.name
+git config user.email
+git config --list #빠져나갈 때 q를 통해 빠져나기
+
