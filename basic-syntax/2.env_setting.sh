@@ -59,3 +59,6 @@ git config user.name
 git config user.email
 git config --list #빠져나갈 때 q를 통해 빠져나기
 
+# 특정 파일을 git 추적 목록에서 제외시키고 싶다면 .gitignore에 파일 목록 등록
+# 이미 add, commit 되어 버린 파일을 추적목록에서 제외하고 싶다면
+git rm -r --cached . 
