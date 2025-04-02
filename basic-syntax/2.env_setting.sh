@@ -18,5 +18,28 @@ git remote remove origin
 # 이것을 다시 내 github에 올리고 싶을 때 사용함.
 git remote set-url origin 레포주소
 
+# git 설정정보 조회
+git config --list
 
+# 타인의 레포를 clone 받는 방법 2가지
+# 1. 커밋이력 그대로 가져오기
+git clone 타인 레포주소
+# 해당 폴더로 이동 후 github 레포 주소 변경    
+git remote set-url origin 나의레포주소
+git push origin main
+# 질문: 왜 1번에서는 add 그리고 commit하지 않고 push를 했나?
+# 푸쉬를 한다는 건 내 로컬 컴터에 저장되어 있는 커밋이력을 푸쉬하겠다는 것이다.    
+# 그런데 다른 사람의 이력을 그대로 가지고 있기 때문에 내 로컬 레포안에 커밋이력이     
+# 그대로 다 들어가 있다. 그래서 add, commit을 할 필요가 없다. 
+# 그런데 만약 .git폴더를 삭제를 해버렸다면 이 때는 커밋이력이 하나도 없는 것이다.     
+# 따라서 커밋 이력 하나는 최초의 커밋 이력은 만들어 줘야지 소스 코드를 원격 레포지토리로 
+# 푸쉬할 수 있다는 것이다.    
 
+#2. 커밋 이력 없이 레포 가져오기
+git clone 타인레포주소
+# 해당 폴더 안으로 이동 후 .git폴더 삭제
+git init
+git remote add origin 나의레포주소
+git add .
+git commit -m "first"
+git push origin main
