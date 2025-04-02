@@ -1,0 +1,1 @@
+hello .gitignore테스트 
