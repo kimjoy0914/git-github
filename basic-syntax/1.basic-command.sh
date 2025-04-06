@@ -78,3 +78,14 @@ git stash list
 # 저장 목록 모두 삭제
 git stash clear
 
+# 버전 명시
+git tag v1.0
+git tag -a v1.0 -m  "주요변경사항적기"
+
+# tag release 배포
+# commit push와 상관없이 태그 별도로 push 
+git push origin v1.0
+
+# 태그 목록 조회
+git tag
+

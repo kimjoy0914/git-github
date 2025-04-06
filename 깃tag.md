@@ -10,6 +10,11 @@
             - git tag v1.0
             - git log로 확인
             - git push origin v1.0
+            - 변경사항을 추가하여 push한 다음 새로운 tag추가하기
+            - git tag -a v1.1 -m "메시지입력"
+            - git log 로 태그추가 확인가능
+            - git push origin v1.1
+            - git tag 엔터로 지금까지 버전 확인 가능능
     - git tag -a v1.0 -m "메시지"
         - tag에 메시지 기록
     - git push origin 버전명(v1.0)
