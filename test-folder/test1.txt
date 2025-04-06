@@ -26,3 +26,4 @@ pull한번 해볼까하고 로컬레포에서 git pull origin main진행함.
 그리고 git pull origin main하면 당연히 충돌이 발생함.     
 충돌사례5번 해결 두번째 방법 실습추가
 로컬 충돌사례5 추가2
+git stash apply명령보다는 pop 명령정도 기억하자

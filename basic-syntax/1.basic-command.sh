@@ -61,8 +61,20 @@ git revert 기존의커밋ID
 # 작업중인 사항을 임시 저장(충돌상황에서 많이 사용함.)
 git stash
 
-# 저장한 최신의 작업 목록을 꺼내기
+# 저장한 최신의 작업 목록을 꺼내서 적용하기기
 # 이 때 git stash한 것은 stack메모리 구조로 저장되어 처음으로 넣은 것이 맨 나중에 나온다.
 # git stash pop하면  마지막에 넣은 것 먼저 나오게 된다는 것이다.
 git stash pop
+
+# 임시 저장한 목록은 그대로 놔둔채 특정 index항목 적용
+git stash apply 인덱스 번호
+
+# 임시 저장한 작업 목록 내용 조회
+git stash show -p 인덱스번호
+
+# 임시 저장한 작업 목록 조회
+git stash list
+
+# 저장 목록 모두 삭제
+git stash clear
 
