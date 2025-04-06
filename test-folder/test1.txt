@@ -16,3 +16,4 @@ origin main수정
 pull한번 해볼까하고 로컬레포에서 git pull origin main진행함.
 이럴 경우 fetch까지는 성공하는데  merge에서 실패가 발생한다. 
 충돌사례5 원격레포 실습추가
+충돌사례5번 해결 두번째 방법 실습추가
