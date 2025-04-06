@@ -56,4 +56,13 @@ git reset head^
 git reset --soft head~1
 
 # push 이후이 취소 -> commit 메시지 작성 vi화면으로 이동 -> :wq엔터
-git revert 기존의커밋IDㄹ
+git revert 기존의커밋ID
+
+# 작업중인 사항을 임시 저장(충돌상황에서 많이 사용함.)
+git stash
+
+# 저장한 최신의 작업 목록을 꺼내기
+# 이 때 git stash한 것은 stack메모리 구조로 저장되어 처음으로 넣은 것이 맨 나중에 나온다.
+# git stash pop하면  마지막에 넣은 것 먼저 나오게 된다는 것이다.
+git stash pop
+
