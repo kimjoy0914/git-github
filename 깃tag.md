@@ -4,7 +4,12 @@
 할 때 tag 사용     
 * 관련 명령어 
     - git tag 버전명(v1.0)
-        - 마지막 커밋을 대상으로 tag설정     
+        - 마지막 커밋을 대상으로 tag설정
+        - github 레포지토리 선택시 화면 오른쪽에 Releases 목록에 tag내용이 추가될 것임.  
+        - 실습순서
+            - git tag v1.0
+            - git log로 확인
+            - git push origin v1.0
     - git tag -a v1.0 -m "메시지"
         - tag에 메시지 기록
     - git push origin 버전명(v1.0)
