@@ -2,3 +2,4 @@ hello test3.txt
 충돌3실습에서 웹레포에 test3.txt에 변경사항 발생시킴 
 로컬에서 feat/member브랜치 생성후 추가한 내용
 두번째 브랜치 실습 - hotfix/member브랜치에서 추가함.
+로컬에서 강제로 pull request 에러 발생을 위한 실습으로 추가함.
